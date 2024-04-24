@@ -43,7 +43,7 @@ def enviar_presionado():
         std_deviation = np.std(prices)
 
         # estadisticas
-        print("Los datos estadisticos son: ")
+        print("Los datos estadisticos son los siguientes: ")
         stats_text = f"Media: {mean_price}\nMediana: {median_price}\nDesviación Estándar: {std_deviation}"
         print(stats_text)
         main_text.insert("end", f"\n\n{stats_text}")
@@ -85,3 +85,5 @@ main_text = tk.Text(frame_principal, width=80, height=20, state='disabled', bg='
 main_text.grid(row=3, column=0, columnspan=2, padx=5, pady=5)
 
 window.mainloop()
+
+
